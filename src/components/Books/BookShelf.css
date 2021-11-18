@@ -1,0 +1,61 @@
+.book-shelf {
+  max-width: 45rem;
+  width: 90%;
+  min-height: 300px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+.books-area {
+  min-height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.5s ease-in-out;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.books-area::-webkit-scrollbar {
+  display: none;
+}
+.book-shelf i {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.274);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 120px 0;
+  width: 30px;
+  z-index: 8;
+  color: #09af00;
+  top: 56%;
+  transform: translateY(-50%);
+}
+.book-shelf .right-arrow {
+  right: 5px;
+  border-radius: 0 14px 14px 0;
+}
+.book-shelf .left-arrow {
+  left: 5px;
+  border-radius: 14px 0 0 14px;
+}
+.book-shelf h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+.books-area.search-result {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  justify-items: center;
+  overflow: visible;
+}
+.books-area.search-result i {
+  display: none;
+}

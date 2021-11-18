@@ -1,0 +1,12 @@
+.home-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-icon:active {
+  transform: translateX(-50%) scale(1.1);
+}
